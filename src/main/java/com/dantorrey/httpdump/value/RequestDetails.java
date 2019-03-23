@@ -6,18 +6,18 @@ import java.util.Map;
 
 public class RequestDetails {
 
-    public String httpRequestType;
+    public String method;
     public String url;
     public String body;
     public Map<String,String> headers;
 
     @JsonProperty("request_type")
-    public String getHttpRequestType() {
-        return httpRequestType;
+    public String getMethod() {
+        return method;
     }
 
-    public void setHttpRequestType(String httpRequestType) {
-        this.httpRequestType = httpRequestType;
+    public void setMethod(String method) {
+        this.method = method;
     }
 
     @JsonProperty("url")
